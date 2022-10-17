@@ -1,14 +1,25 @@
 import InvoiceItem from "../InvoiceItem/InvoiceItem";
+import { useRouter } from "next/router";
 
 const InvoicesList = (props) => {
+  const router = useRouter();
+
+  const newInvoiceHandler = () => {
+    router.push("/new-invoice");
+  };
+
   return (
     <>
       <div className="flex justify-between w-10/12 m-auto">
-        <h1 className=" p-4 h-auto text-lg justify-items-center text-">
+        <h1 className=" p-4 h-auto text-lg justify-items-center">
           Current Number of Invoices: {props.invoices.length}
         </h1>
-
-        <button className="bg-[#7D5EF7] p-2 rounded-xl">
+        {/* Add Filtering  */}
+        {/* Should filter by Status or Amount */}
+        <button
+          className="bg-[#7D5EF7] p-2 rounded-xl"
+          onClick={newInvoiceHandler}
+        >
           &#43; New Invoice
         </button>
       </div>
