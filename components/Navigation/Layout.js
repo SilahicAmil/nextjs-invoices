@@ -5,7 +5,7 @@ const Layout = (props) => {
     <div>
       <MainNavigation />
 
-      <main className=" w-11/12">{props.children}</main>
+      <main className=" m-auto">{props.children}</main>
     </div>
   );
 };

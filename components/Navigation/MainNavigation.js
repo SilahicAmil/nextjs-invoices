@@ -1,14 +1,22 @@
-import { FaFileInvoice } from "react-icons/fa";
 import Link from "next/link";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 const MainNavigation = (props) => {
   return (
-    <header className="w-full h-20 flex flex-col justify-between p-4">
+    <header className="justify-between p-4">
       <div className="text-2xl font-bold">
-        <Link href="/new-invoice">
-          {/* <FaFileInvoice /> */}
-          Invoices
-        </Link>
+        <ul className="flex justify-between m-4">
+          <li>
+            {" "}
+            <Link href="/">
+              {/* <FaFileInvoice /> */}
+              Invoices
+            </Link>
+          </li>
+          <li>
+            <MdOutlineDarkMode />
+          </li>
+        </ul>
       </div>
     </header>
   );

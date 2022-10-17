@@ -10,7 +10,7 @@ const InvoicesList = (props) => {
 
   return (
     <>
-      <div className="flex justify-between w-10/12 m-auto">
+      <div className="flex justify-between w-11/12 m-auto">
         <h1 className=" p-4 h-auto text-lg justify-items-center">
           Current Number of Invoices: {props.invoices.length}
         </h1>
@@ -24,7 +24,7 @@ const InvoicesList = (props) => {
         </button>
       </div>
 
-      <ul className=" p-6 text-xl font-mono gap-4">
+      <ul className="h-full p-6 text-xl font-mono gap-4 w-full">
         {props.invoices.map((invoice) => {
           return (
             <InvoiceItem
