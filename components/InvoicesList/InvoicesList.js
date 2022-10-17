@@ -3,27 +3,30 @@ import InvoiceItem from "../InvoiceItem/InvoiceItem";
 const InvoicesList = (props) => {
   return (
     <>
-      <div>
-        <section className="h-auto w-auto">
-          <ul className="flex p-6 justify-between rounded-xl bg-[#1E213B] mx-auto text-xl font-mono gap-4">
-            {props.data.map((item) => {
-              return (
-                <InvoiceItem
-                  key={item.id}
-                  ticketId={item.id}
-                  due={item.due}
-                  name={item.name}
-                  amount={item.amount}
-                  status={item.status}
-                />
-              );
-            })}
-            <div>
-              <button>&gt;</button>
-            </div>
-          </ul>
-        </section>
+      <div className="flex justify-between w-10/12 m-auto">
+        <h1 className=" p-4 h-auto text-lg justify-items-center text-">
+          Current Number of Invoices: {props.invoices.length}
+        </h1>
+
+        <button className="bg-[#7D5EF7] p-2 rounded-xl">
+          &#43; New Invoice
+        </button>
       </div>
+
+      <ul className=" p-6 text-xl font-mono gap-4">
+        {props.invoices.map((invoice) => {
+          return (
+            <InvoiceItem
+              key={invoice.id}
+              ticketId={invoice.id}
+              due={invoice.due}
+              name={invoice.name}
+              amount={invoice.amount}
+              status={invoice.status}
+            />
+          );
+        })}
+      </ul>
     </>
   );
 };

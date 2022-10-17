@@ -10,10 +10,17 @@ const DUMMY_DATA = [
     amount: 4200,
     status: "Paid",
   },
+  {
+    id: "RT3452",
+    due: date,
+    name: "John Simmons",
+    amount: 200,
+    status: "Pending",
+  },
 ];
 
 const InvoicesHomePage = (props) => {
-  return <InvoicesList data={DUMMY_DATA} />;
+  return <InvoicesList invoices={DUMMY_DATA} />;
 };
 
 export default InvoicesHomePage;
