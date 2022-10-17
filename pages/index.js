@@ -1,11 +1,19 @@
 import InvoicesList from "../components/InvoicesList/InvoicesList";
 
-const InvoicesHomePage = () => {
-  return (
-    // using arbitrary values syntax for this project
+const date = new Date().toLocaleDateString("en-US");
 
-    <InvoicesList />
-  );
+const DUMMY_DATA = [
+  {
+    id: "RT7865",
+    due: date,
+    name: "John Roberts",
+    amount: 4200,
+    status: "Paid",
+  },
+];
+
+const InvoicesHomePage = (props) => {
+  return <InvoicesList data={DUMMY_DATA} />;
 };
 
 export default InvoicesHomePage;

@@ -1,16 +1,23 @@
+import InvoiceItem from "../InvoiceItem/InvoiceItem";
+
 const InvoicesList = (props) => {
   return (
     <>
       <div>
-        <section className="h-2/3 w-2/3">
-          <ul className="flex p-6 justify-between rounded-xl bg-[#1E213B] mx-auto text-xl font-mono">
-            {/* Since these li's inherit the styling 
-            i'll just map over them and not create a seperate compnents */}
-            <li>#RT3764</li>
-            <li>Due: Dec, 19, 2022</li>
-            <li>Vasili Mitrokhin</li>
-            <li>$1,800.69</li>
-            <li>&#111; Pending</li>
+        <section className="h-auto w-auto">
+          <ul className="flex p-6 justify-between rounded-xl bg-[#1E213B] mx-auto text-xl font-mono gap-4">
+            {props.data.map((item) => {
+              return (
+                <InvoiceItem
+                  key={item.id}
+                  ticketId={item.id}
+                  due={item.due}
+                  name={item.name}
+                  amount={item.amount}
+                  status={item.status}
+                />
+              );
+            })}
             <div>
               <button>&gt;</button>
             </div>
