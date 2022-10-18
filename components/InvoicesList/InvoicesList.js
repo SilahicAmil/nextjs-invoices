@@ -26,7 +26,7 @@ const InvoicesList = (props) => {
         </button>
       </div>
 
-      <ul className="h-full p-6 text-xl font-mono gap-4 w-full">
+      <ul className="h-full p-6 text-xl font-mono gap-4 w-screen">
         {props.invoices.map((invoice) => {
           return (
             <InvoiceItem

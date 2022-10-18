@@ -8,6 +8,7 @@ const InvoiceDetails = () => {
         <title>Invoice Details - #RT7865</title>
       </Head>
       <h1>Invoice Details</h1>
+      {/* Add Invoice Details Component */}
     </>
   );
 };
