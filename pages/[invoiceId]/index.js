@@ -12,4 +12,13 @@ const InvoiceDetails = () => {
   );
 };
 
+// getStaticPaths
+// params {
+// invoiceId: invoice._id.toString()
+// }
+
+// getStaticProps
+// fetch the data for a singular invoice
+// based off objectId
+
 export default InvoiceDetails;

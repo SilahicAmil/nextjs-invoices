@@ -45,7 +45,7 @@ const InvoicesHomePage = (props) => {
   );
 };
 
-// get static props for invoice data
+// get static props for invoice data GET Request
 // use mongoDB client
 // ^ need to find the docs for this
 

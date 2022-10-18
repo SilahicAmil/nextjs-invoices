@@ -1,5 +1,6 @@
+import { Link, useRouter } from "next/router";
+
 import InvoiceItem from "../InvoiceItem/InvoiceItem";
-import { useRouter } from "next/router";
 
 const InvoicesList = (props) => {
   const router = useRouter();
@@ -11,7 +12,7 @@ const InvoicesList = (props) => {
 
   return (
     <>
-      <div className="flex justify-between w-11/12 m-auto">
+      <div className="flex justify-between w-screen m-auto">
         <h1 className=" p-4 h-auto text-lg justify-items-center">
           Current Number of Invoices: {props.invoices.length}
         </h1>
