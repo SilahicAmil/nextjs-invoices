@@ -17,7 +17,7 @@ const MainNavigation = (props) => {
     <header className="">
       <div className="text-3xl font-bold">
         <ul className="flex  justify-between m-4 ">
-          <div className="bg-[#8F74FD] text-3xl p-6 rounded-xl">
+          <div className="bg-[#8F74FD] text-3xl p-4 rounded-xl">
             <li className="">
               <button onClick={navigationHandler}>
                 <FaFileInvoice />

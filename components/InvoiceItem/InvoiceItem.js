@@ -16,14 +16,14 @@ const InvoiceItem = (props) => {
 
   return (
     <>
-      <div className="flex w-screen justify-evenly text-align  mb-4 bg-[#1E213B] p-4 rounded-xl items-center">
+      <div className="flex w-screen justify-around text-align gap-2  mb-4 bg-[#1E213B] p-4 rounded-xl items-center">
         <li className=""># {props.ticketId}</li>
         <li>{props.due}</li>
         <li>{props.name}</li>
         <li>$ {props.amount}</li>
 
-        <div className="bg-red-500 p-2 rounded-lg">
-          <li>{props.status}</li>
+        <div className="bg-red-500 p-2 rounded-lg ">
+          <li className="">{props.status}</li>
         </div>
         <li>
           <button onClick={invoiceDetailHandler}>&gt;</button>
