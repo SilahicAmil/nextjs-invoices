@@ -32,6 +32,13 @@ const DUMMY_DATA = [
     amount: 40000,
     status: "Pending",
   },
+  {
+    id: "RT8759",
+    due: date,
+    name: "John John",
+    amount: 2000,
+    status: "Paid",
+  },
 ];
 
 const InvoicesHomePage = (props) => {

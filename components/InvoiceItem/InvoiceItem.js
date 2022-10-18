@@ -11,22 +11,19 @@ const InvoiceItem = (props) => {
     // possibly a drop down menu or something
   };
 
-  // if props.status === pending set background
-  // class color to pending color
-  // if props.status !== closed set background
-  // color to paid else set to red
-  // might be able to use  a switch statement
+  // if !== paid set color to pending color
+  // else set color to paid color
 
   return (
     <>
-      <div className="flex w-screen justify-around text-align mb-4 bg-[#1E213B] p-4 rounded-xl items-center">
+      <div className="flex w-screen justify-evenly text-align  mb-4 bg-[#1E213B] p-4 rounded-xl items-center">
         <li className=""># {props.ticketId}</li>
         <li>{props.due}</li>
         <li>{props.name}</li>
         <li>$ {props.amount}</li>
 
-        <div className="bg-red-500 p-2 rounded-xl">
-          <li>&#111; {props.status}</li>
+        <div className="bg-red-500 p-2 rounded-lg">
+          <li>{props.status}</li>
         </div>
         <li>
           <button onClick={invoiceDetailHandler}>&gt;</button>
