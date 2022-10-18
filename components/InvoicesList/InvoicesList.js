@@ -6,6 +6,7 @@ const InvoicesList = (props) => {
 
   const newInvoiceHandler = () => {
     router.push("/new-invoice");
+    // route to new invoice form
   };
 
   return (

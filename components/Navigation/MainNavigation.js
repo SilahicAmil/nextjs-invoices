@@ -2,6 +2,10 @@ import Link from "next/link";
 import { MdOutlineDarkMode } from "react-icons/md";
 
 const MainNavigation = (props) => {
+  // eventually add context to light/dark mode
+  // Mainly applies to the background color
+  // possibly set to #ccc
+
   return (
     <header className="justify-between p-4">
       <div className="text-2xl font-bold">
@@ -14,7 +18,9 @@ const MainNavigation = (props) => {
             </Link>
           </li>
           <li>
-            <MdOutlineDarkMode />
+            <button>
+              <MdOutlineDarkMode />
+            </button>
           </li>
         </ul>
       </div>

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import InvoicesList from "../components/InvoicesList/InvoicesList";
 
 const date = new Date().toLocaleDateString("en-US");
@@ -34,7 +35,18 @@ const DUMMY_DATA = [
 ];
 
 const InvoicesHomePage = (props) => {
-  return <InvoicesList invoices={DUMMY_DATA} />;
+  return (
+    <>
+      <Head>
+        <title>Invoices - Home</title>
+      </Head>
+      <InvoicesList invoices={DUMMY_DATA} />
+    </>
+  );
 };
+
+// get static props for invoice data
+// use mongoDB client
+// ^ need to find the docs for this
 
 export default InvoicesHomePage;
