@@ -16,6 +16,7 @@ const NewInvoicePage = () => {
         "Content-Type": "application/json",
       },
     });
+    // TODO: Handler Errors
     // await res.json
     const data = await response.json();
     console.log(data);

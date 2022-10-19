@@ -18,8 +18,14 @@ const InvoiceDetails = () => {
 // invoiceId: invoice._id.toString()
 // }
 
+// export async function getStaicPaths() {}
+
 // getStaticProps
 // fetch the data for a singular invoice
 // based off objectId
+
+// export async function getStaticProps(context) {
+//   const invoiceId = cotext.params.meetupId;
+// }
 
 export default InvoiceDetails;
