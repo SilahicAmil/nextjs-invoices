@@ -1,7 +1,12 @@
 const InvoiceDetail = (props) => {
-  const paidStatuHandler = () => {
+  const paidStatusHandler = () => {
     // eventually change status to paid
+    // use router to navigate to a paid api?
     console.log("paid");
+  };
+
+  const deleteInvoiceHandler = () => {
+    // probably use router to navigate to a /delete-invoice api?
   };
 
   return (
@@ -12,14 +17,14 @@ const InvoiceDetail = (props) => {
             <button className="p-4 rounded-md bg-[#77292A]">Delete</button>
             <button
               className="p-4 rounded-md bg-[#3D9588]"
-              onClick={paidStatuHandler}
+              onClick={paidStatusHandler}
             >
               Paid
             </button>
           </div>
         </div>
         <div className="items-center justify-center p-4 text-xl">
-          <h1 className=" ">Ticket Id: {props.invoiceId.substring(0, 6)} </h1>
+          <h1 className=" ">Ticket Id: {props.invoiceId.substring(0, 7)} </h1>
         </div>
 
         <div className="mt-10 py-4">

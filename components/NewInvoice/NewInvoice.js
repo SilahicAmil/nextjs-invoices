@@ -53,7 +53,7 @@ const NewInvoice = (props) => {
         <label htmlFor="">Amount</label>
         <input type="number" min="100" max="100000" step="1" ref={amountRef} />
         <label htmlFor="">Status</label>
-        <input type="text" value="Pending" ref={statusRef} />
+        <input type="text" defaultValue="Pending" ref={statusRef} />
 
         <div>
           <button className="p-4 bg-[#3D9588] mt-5 rounded-lg">Submit</button>
