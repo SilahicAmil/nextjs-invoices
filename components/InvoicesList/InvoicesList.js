@@ -31,7 +31,7 @@ const InvoicesList = (props) => {
           return (
             <InvoiceItem
               key={invoice.id}
-              ticketId={invoice.id}
+              invoiceId={invoice.id}
               due={invoice.due}
               name={invoice.name}
               amount={invoice.amount}

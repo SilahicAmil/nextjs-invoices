@@ -17,6 +17,7 @@ const InvoiceDetails = (props) => {
         name={props.invoiceData.name}
         due={props.invoiceData.due}
         amount={props.invoiceData.amount}
+        status={props.invoiceData.status}
       />
     </>
   );
@@ -78,6 +79,7 @@ export async function getStaticProps(context) {
         name: selectedInvoice.firstName + " " + selectedInvoice.lastName,
         due: selectedInvoice.dueDate,
         amount: selectedInvoice.amount,
+        status: selectedInvoice.status,
       },
     },
   };

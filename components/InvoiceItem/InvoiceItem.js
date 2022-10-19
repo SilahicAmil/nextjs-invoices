@@ -4,7 +4,7 @@ const InvoiceItem = (props) => {
   const router = useRouter();
 
   const invoiceDetailHandler = () => {
-    router.push("/" + props.ticketId);
+    router.push("/" + props.invoiceId);
     // based off ticketId render page
     // show the ticket form prefilled with the data
     //  + the  ability to change status
@@ -17,7 +17,7 @@ const InvoiceItem = (props) => {
   return (
     <>
       <div className="flex w-screen justify-around text-align gap-2  mb-4 bg-[#1E213B] p-4 rounded-xl items-center">
-        <li className=""># {props.ticketId.substring(0, 7)}</li>
+        <li className=""># {props.invoiceId.substring(0, 7)}</li>
 
         <li>Due: {props.due}</li>
         <li>{props.name}</li>

@@ -24,7 +24,7 @@ const InvoiceDetail = (props) => {
           </div>
         </div>
         <div className="items-center justify-center p-4 text-xl">
-          <h1 className=" ">Ticket Id: {props.invoiceId.substring(0, 7)} </h1>
+          <h1 className=" ">Invoice Id: {props.invoiceId.substring(0, 7)} </h1>
         </div>
 
         <div className="mt-10 py-4">
@@ -32,6 +32,7 @@ const InvoiceDetail = (props) => {
             <h1 className=" p-4 ">Name: {props.name} </h1>
             <span className="p-4 ">Due Date: {props.due}</span>
             <p className="p-4 ">Amount: {props.amount}</p>
+            <p className="p-4">Status: {props.status}</p>
           </div>
         </div>
       </div>
