@@ -5,6 +5,7 @@ const NewInvoice = (props) => {
   const lastNameRef = useRef();
   const dateRef = useRef();
   const amountRef = useRef();
+  const statusRef = useRef();
 
   const submitFormHandler = (e) => {
     e.preventDefault();
@@ -15,6 +16,7 @@ const NewInvoice = (props) => {
     const lastNameRefValue = lastNameRef.current.value;
     const dateRefValue = dateRef.current.value;
     const amountRefValue = amountRef.current.value;
+    const statusRefValue = statusRef.current.value;
 
     // Redux would be perfect for this
     const inputData = {
@@ -22,6 +24,7 @@ const NewInvoice = (props) => {
       lastName: lastNameRefValue,
       dueDate: new Date(dateRefValue).toLocaleDateString("en-US"),
       amount: amountRefValue,
+      status: statusRefValue,
     };
 
     props.onAddInvoice(inputData);
@@ -50,6 +53,7 @@ const NewInvoice = (props) => {
         <label htmlFor="">Amount</label>
         <input type="number" min="100" max="100000" step="1" ref={amountRef} />
         <label htmlFor="">Status</label>
+        <input type="text" value="Pending" ref={statusRef} />
 
         <div>
           <button className="p-4 bg-[#3D9588] mt-5 rounded-lg">Submit</button>

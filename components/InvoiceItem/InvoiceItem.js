@@ -18,7 +18,8 @@ const InvoiceItem = (props) => {
     <>
       <div className="flex w-screen justify-around text-align gap-2  mb-4 bg-[#1E213B] p-4 rounded-xl items-center">
         <li className=""># {props.ticketId.substring(0, 6)}</li>
-        <li>{props.due}</li>
+
+        <li>Due: {props.due}</li>
         <li>{props.name}</li>
         <li>$ {props.amount}</li>
 
