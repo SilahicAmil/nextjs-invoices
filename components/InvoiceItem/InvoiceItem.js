@@ -4,7 +4,7 @@ const InvoiceItem = (props) => {
   const router = useRouter();
 
   const invoiceDetailHandler = () => {
-    router.push("/invoiceId");
+    router.push("/" + props.ticketId);
     // based off ticketId render page
     // show the ticket form prefilled with the data
     //  + the  ability to change status
