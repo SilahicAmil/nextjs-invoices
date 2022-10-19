@@ -37,7 +37,7 @@ export async function getStaticProps() {
         due: invoice.dueDate,
         name: invoice.firstName + " " + invoice.lastName,
         amount: invoice.amount,
-        status: "Paid",
+        status: "Pending",
       })),
     },
     revalidate: 10,

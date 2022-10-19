@@ -22,7 +22,7 @@ const InvoiceItem = (props) => {
         <li>{props.name}</li>
         <li>$ {props.amount}</li>
 
-        <div className="bg-red-500 p-2 rounded-lg ">
+        <div className="bg-[#DF9134] p-2 rounded-lg ">
           <li className="">{props.status}</li>
         </div>
         <li>

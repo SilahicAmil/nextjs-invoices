@@ -1,4 +1,5 @@
 import Head from "next/head";
+import InvoiceDetail from "../../components/InvoiceDetail/InvoiceDetail";
 
 const InvoiceDetails = () => {
   return (
@@ -7,8 +8,9 @@ const InvoiceDetails = () => {
         {/* make the ticketId dynamic */}
         <title>Invoice Details - #RT7865</title>
       </Head>
-      <h1>Invoice Details</h1>
+      <h1 className="m-4">Invoice Details</h1>
       {/* Add Invoice Details Component */}
+      <InvoiceDetail />
     </>
   );
 };
