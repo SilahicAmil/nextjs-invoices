@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const NewInvoice = (props) => {
   const firstNameRef = useRef();
@@ -24,6 +24,7 @@ const NewInvoice = (props) => {
       amount: amountRefValue,
     };
 
+    props.onAddInvoice(inputData);
     console.log(inputData);
     e.target.reset();
   };
@@ -48,6 +49,8 @@ const NewInvoice = (props) => {
         <input type="date" ref={dateRef} />
         <label htmlFor="">Amount</label>
         <input type="number" min="100" max="100000" step="1" ref={amountRef} />
+        <label htmlFor="">Status</label>
+
         <div>
           <button className="p-4 bg-[#3D9588] mt-5 rounded-lg">Submit</button>
         </div>
