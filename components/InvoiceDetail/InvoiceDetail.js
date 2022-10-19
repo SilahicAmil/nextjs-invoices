@@ -9,7 +9,7 @@ const InvoiceDetail = (props) => {
           </div>
         </div>
         <div className="items-center justify-center p-4 text-xl">
-          <h1 className=" ">Ticket Id: {props.ticketId.substring(0, 6)} </h1>
+          <h1 className=" ">Ticket Id: {props.invoiceId.substring(0, 6)} </h1>
         </div>
 
         <div className="mt-10 py-4">

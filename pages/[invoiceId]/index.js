@@ -13,7 +13,7 @@ const InvoiceDetails = (props) => {
       <h1 className="m-4">Invoice Details</h1>
       {/* Add Invoice Details Component */}
       <InvoiceDetail
-        ticketId={props.invoiceData.id}
+        invoiceId={props.invoiceData.id}
         name={props.invoiceData.name}
         due={props.invoiceData.due}
         amount={props.invoiceData.amount}
