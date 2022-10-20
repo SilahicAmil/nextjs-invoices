@@ -5,16 +5,21 @@ const InvoiceDetail = (props) => {
     console.log("paid");
   };
 
-  const deleteInvoiceHandler = () => {
+  async function deleteInvoice(props) {
     // probably use router to navigate to a /delete-invoice api?
-  };
+  }
 
   return (
     <>
       <div className="bg-[#1E213B] h-full w-screen">
         <div className=" m-4 py-4">
           <div className="mb-4 flex flex-row-reverse px-4 gap-4">
-            <button className="p-4 rounded-md bg-[#77292A]">Delete</button>
+            <button
+              className="p-4 rounded-md bg-[#77292A]"
+              onClick={deleteInvoice}
+            >
+              Delete
+            </button>
             <button
               className="p-4 rounded-md bg-[#3D9588]"
               onClick={paidStatusHandler}
