@@ -28,3 +28,5 @@ async function handler(req, res) {
 export default handler;
 
 //  add a file with remove handler
+// add a file with update status handler similiar to this
+// reference docs

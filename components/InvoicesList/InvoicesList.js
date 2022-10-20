@@ -12,7 +12,7 @@ const InvoicesList = (props) => {
 
   return (
     <>
-      <div className="flex justify-between w-screen m-auto font-mono">
+      <div className="flex justify-between w-screen m-auto  font-mono">
         <h1 className=" p-4 h-auto text-lg justify-items-center m-4">
           {/* Current Number of Invoices: {props.invoices.length} */}
         </h1>

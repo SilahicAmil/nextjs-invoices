@@ -4,6 +4,8 @@ import { MongoClient } from "mongodb";
 import { ObjectId } from "mongodb";
 
 const InvoiceDetails = (props) => {
+  // add isloading state
+
   return (
     <>
       <Head>
